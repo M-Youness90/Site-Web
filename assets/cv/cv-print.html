@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Younes MSADDAK — Administrateur Systèmes et Réseaux</title>
+  <meta name="author" content="Younes MSADDAK">
+  <meta name="description" content="CV de Younes MSADDAK, administrateur systèmes et réseaux à Casablanca : expériences, compétences, formations et certifications.">
+  <meta name="keywords" content="Younes MSADDAK, CV, administrateur systèmes et réseaux, support informatique, maintenance, réseaux, Casablanca">
+  <style>
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 100 900;
+      src: url("../fonts/inter-latin.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 400 800;
+      src: url("../fonts/sora-latin.woff2") format("woff2");
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+
+    body {
+      width: 210mm;
+      color: #1b293d;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      font-size: 8.5pt;
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .page {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 297mm;
+      padding: 9.5mm 13mm 7mm;
+      background: #ffffff;
+    }
+
+    /* En-tête */
+    .header {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 33mm;
+      gap: 8mm;
+      align-items: center;
+      overflow: hidden;
+      padding: 7mm 9mm;
+      border-radius: 4mm;
+      background:
+        radial-gradient(90% 140% at 100% 0%, rgba(91, 149, 255, 0.28), transparent 55%),
+        #0b1a33;
+      color: #ffffff;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 0.3mm solid rgba(255, 255, 255, 0.14);
+      border-radius: 4mm;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      margin-bottom: 2.2mm;
+      color: #9fc0ff;
+      font-size: 6.8pt;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: "Sora", "Segoe UI", sans-serif;
+      font-size: 23pt;
+      font-weight: 600;
+      letter-spacing: -0.045em;
+      line-height: 1.02;
+    }
+
+    h1 span {
+      display: block;
+      color: #9fc0ff;
+    }
+
+    .role {
+      margin-top: 2.4mm;
+      color: #dce8ff;
+      font-size: 8.3pt;
+      font-weight: 500;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm 5mm;
+      margin-top: 4.2mm;
+      color: #b9c9e1;
+      font-size: 7.4pt;
+    }
+
+    .contact li {
+      display: flex;
+      align-items: center;
+      gap: 1.5mm;
+    }
+
+    .contact .dot {
+      width: 1.1mm;
+      height: 1.1mm;
+      border-radius: 50%;
+      background: #5b95ff;
+    }
+
+    .photo {
+      position: relative;
+      width: 33mm;
+      height: 41mm;
+      overflow: hidden;
+      border: 0.5mm solid rgba(255, 255, 255, 0.24);
+      border-radius: 3mm;
+      background: #0d203d;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    .years {
+      position: absolute;
+      right: -1mm;
+      bottom: -1mm;
+      padding: 1.2mm 2.6mm;
+      border-radius: 2mm 0 2mm 0;
+      background: #5b95ff;
+      color: #04101f;
+      font-family: "Sora", sans-serif;
+      font-size: 6.5pt;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    /* Corps */
+    .body {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+      gap: 8mm;
+      margin-top: 5.5mm;
+    }
+
+    .main {
+      min-width: 0;
+    }
+
+    .side {
+      min-width: 0;
+      align-self: start;
+      padding: 6mm 5.5mm;
+      border-radius: 3mm;
+      background: #f2f6fc;
+    }
+
+    section + section {
+      margin-top: 4.2mm;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+      margin-bottom: 2.6mm;
+      color: #0b1a33;
+      font-family: "Sora", "Segoe UI", sans-serif;
+      font-size: 8.4pt;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h2::before {
+      content: "";
+      width: 2.2mm;
+      height: 2.2mm;
+      flex: none;
+      border-radius: 0.6mm;
+      background: #1d4ed8;
+      box-shadow: 0 0 0 1mm #e3ecff;
+    }
+
+    .profile {
+      color: #3c4c63;
+      font-size: 8pt;
+      line-height: 1.58;
+      text-align: justify;
+    }
+
+    .entry + .entry {
+      margin-top: 2.8mm;
+      padding-top: 2.6mm;
+      border-top: 0.2mm solid #e2e9f3;
+    }
+
+    .entry-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 3mm;
+    }
+
+    .entry h3 {
+      color: #12213a;
+      font-family: "Sora", "Segoe UI", sans-serif;
+      font-size: 8.8pt;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .entry-period {
+      flex: none;
+      color: #1d4ed8;
+      font-size: 7pt;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .entry-org {
+      margin-top: 0.8mm;
+      color: #5a6b83;
+      font-size: 7.5pt;
+      font-weight: 500;
+    }
+
+    .entry ul {
+      display: grid;
+      gap: 0.8mm;
+      margin-top: 1.8mm;
+    }
+
+    .entry li {
+      position: relative;
+      padding-left: 3.2mm;
+      color: #46566d;
+      font-size: 7.5pt;
+      line-height: 1.48;
+    }
+
+    .entry li::before {
+      content: "";
+      position: absolute;
+      top: 1.35mm;
+      left: 0;
+      width: 1.1mm;
+      height: 1.1mm;
+      border-radius: 50%;
+      background: #5b95ff;
+    }
+
+    /* Formations */
+    .education {
+      display: grid;
+      gap: 1.6mm;
+    }
+
+    .education li {
+      display: grid;
+      grid-template-columns: 5.5mm 1fr;
+      gap: 2.4mm;
+      align-items: start;
+      padding: 1.9mm 2.8mm;
+      border: 0.2mm solid #e2e9f3;
+      border-radius: 1.8mm;
+      background: #fbfcfe;
+    }
+
+    .education .num {
+      display: grid;
+      place-items: center;
+      width: 5.5mm;
+      height: 5.5mm;
+      border-radius: 1.2mm;
+      background: #e8f0ff;
+      color: #1d4ed8;
+      font-family: "Sora", sans-serif;
+      font-size: 6.3pt;
+      font-weight: 700;
+    }
+
+    .education strong {
+      display: block;
+      color: #182844;
+      font-size: 7.6pt;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .education small {
+      display: block;
+      margin-top: 0.4mm;
+      color: #64748b;
+      font-size: 6.7pt;
+    }
+
+    /* Colonne */
+    .side section + section {
+      margin-top: 4.6mm;
+      padding-top: 4.2mm;
+      border-top: 0.2mm solid #dbe5f2;
+    }
+
+    .side h2 {
+      margin-bottom: 2mm;
+      font-size: 7.7pt;
+    }
+
+    .skill-group + .skill-group {
+      margin-top: 2.4mm;
+    }
+
+    .skill-group h3 {
+      margin-bottom: 1.2mm;
+      color: #334660;
+      font-size: 6.9pt;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2mm;
+    }
+
+    .chips li {
+      padding: 0.8mm 1.7mm;
+      border: 0.2mm solid #d8e3f1;
+      border-radius: 1.2mm;
+      background: #ffffff;
+      color: #40526b;
+      font-size: 6.3pt;
+      line-height: 1.35;
+    }
+
+    .cert + .cert {
+      margin-top: 2.2mm;
+    }
+
+    .cert strong {
+      display: block;
+      color: #182844;
+      font-size: 7.5pt;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .cert small {
+      display: block;
+      margin-top: 0.3mm;
+      color: #5a6b83;
+      font-size: 6.5pt;
+    }
+
+    .lang-list {
+      display: grid;
+      gap: 1.4mm;
+    }
+
+    .lang-list li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2mm;
+      color: #334660;
+      font-size: 7.2pt;
+    }
+
+    .lang-list span {
+      padding: 0.5mm 1.5mm;
+      border-radius: 1mm;
+      background: #e8f0ff;
+      color: #1d4ed8;
+      font-size: 5.8pt;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .simple-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2mm;
+    }
+
+    .simple-list li {
+      color: #40526b;
+      font-size: 6.8pt;
+    }
+
+    .simple-list li + li::before {
+      content: "·";
+      margin-right: 1.2mm;
+      color: #9fb0c7;
+    }
+
+    /* Pied de page */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4mm;
+      margin-top: auto;
+      padding-top: 4mm;
+      color: #7b8ca3;
+      font-size: 6.3pt;
+    }
+
+    .footer strong {
+      color: #334660;
+      font-weight: 600;
+    }
+
+    .footer .line {
+      flex: 1;
+      height: 0.2mm;
+      background: #e2e9f3;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <p class="eyebrow">Curriculum vitæ</p>
+        <h1>Younes <span>MSADDAK</span></h1>
+        <p class="role">Administrateur Systèmes et Réseaux</p>
+        <ul class="contact">
+          <li><span class="dot"></span><a href="tel:+212605625254">06 05 62 52 54</a></li>
+          <li><span class="dot"></span><a href="mailto:msaddekyounes@gmail.com">msaddekyounes@gmail.com</a></li>
+          <li><span class="dot"></span>Casablanca, Maroc</li>
+        </ul>
+      </div>
+      <div class="photo">
+        <img src="../img/photo-professionnelle.jpg" alt="Portrait de Younes MSADDAK">
+        <span class="years">8 ANS D’EXPÉRIENCE</span>
+      </div>
+    </header>
+
+    <div class="body">
+      <div class="main">
+        <section>
+          <h2>Profil</h2>
+          <p class="profile">
+            Titulaire d’une licence en Ingénierie Réseaux, Systèmes et Sécurité, ainsi que de deux
+            diplômes en réseaux informatiques et en maintenance et support informatique et réseau,
+            je dispose de 8 ans d’expérience dans les technologies de l’information. J’interviens
+            sur l’assistance aux utilisateurs, la maintenance des postes de travail et des
+            périphériques, la configuration réseau et le support en environnement professionnel.
+            Je souhaite aujourd’hui relever de nouveaux défis afin de mettre à profit mes
+            compétences, approfondir mes connaissances et développer de nouvelles expertises.
+          </p>
+        </section>
+
+        <section>
+          <h2>Expériences professionnelles</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Technicien de maintenance informatique et support réseau</h3>
+              <span class="entry-period">2019 — 2026</span>
+            </div>
+            <p class="entry-org">Société Nationale de Radiodiffusion et de Télévision (SNRT)</p>
+            <ul>
+              <li>Assistance technique aux utilisateurs (Helpdesk) et résolution des incidents informatiques.</li>
+              <li>Installation, configuration et maintenance des postes de travail et des périphériques informatiques.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Expérience en environnement informatique et industriel</h3>
+              <span class="entry-period">2017 — 2018</span>
+            </div>
+            <p class="entry-org">Vivo Energy — Shell Maroc</p>
+            <ul>
+              <li>Implémentation d’une solution d’affichage dynamique au siège et dans les stations régionales.</li>
+              <li>Conduite, réglage et surveillance des équipements de production industrielle, dans le respect des normes de qualité et de sécurité.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3>Expérience en informatique</h3>
+              <span class="entry-period">6 mois</span>
+            </div>
+            <p class="entry-org">Préfecture Ben M’sik — Sidi Othman</p>
+            <ul>
+              <li>Initiation au support informatique.</li>
+              <li>Maintenance préventive et corrective.</li>
+              <li>Configuration des réseaux informatiques.</li>
+              <li>Initiation à l’informatique et maîtrise des outils bureautiques.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Formations et diplômes</h2>
+          <ul class="education">
+            <li>
+              <span class="num">01</span>
+              <span>
+                <strong>Licence en Ingénierie Réseaux, Systèmes et Sécurité</strong>
+                <small>Réseaux, systèmes et sécurité de l’information</small>
+              </span>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <span>
+                <strong>Technicien spécialisé en réseau informatique</strong>
+                <small>Administration et support des infrastructures réseau</small>
+              </span>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <span>
+                <strong>Technicien en maintenance et support informatique et réseau</strong>
+                <small>Maintenance informatique et assistance technique</small>
+              </span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="side">
+        <section>
+          <h2>Compétences</h2>
+          <div class="skill-group">
+            <h3>Support &amp; assistance</h3>
+            <ul class="chips">
+              <li>Helpdesk</li>
+              <li>Assistance utilisateurs</li>
+              <li>Résolution d’incidents</li>
+              <li>Maintenance préventive</li>
+              <li>Maintenance corrective</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Réseaux &amp; infrastructure</h3>
+            <ul class="chips">
+              <li>Configuration réseau</li>
+              <li>Support réseau</li>
+              <li>Équipements réseau</li>
+              <li>Connectivité</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Systèmes &amp; outils</h3>
+            <ul class="chips">
+              <li>Postes de travail</li>
+              <li>Périphériques</li>
+              <li>Outils bureautiques</li>
+              <li>Affichage dynamique</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Certifications</h2>
+          <div class="cert">
+            <strong>Cisco CCNA</strong>
+            <small>Cisco Networking Academy</small>
+          </div>
+          <div class="cert">
+            <strong>Microsoft Certified Solutions Associate</strong>
+            <small>MCSA — Microsoft</small>
+          </div>
+        </section>
+
+        <section>
+          <h2>Langues</h2>
+          <ul class="lang-list">
+            <li>Arabe <span>AR</span></li>
+            <li>Français <span>FR</span></li>
+            <li>Anglais <span>EN</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Atouts</h2>
+          <ul class="simple-list">
+            <li>Curieux</li>
+            <li>Autonome</li>
+            <li>Dynamique</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Centres d’intérêt</h2>
+          <ul class="simple-list">
+            <li>Recherche</li>
+            <li>Sport</li>
+            <li>Lecture</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <strong>Younes MSADDAK</strong>
+      <span class="line"></span>
+      <span>Administrateur Systèmes et Réseaux · Casablanca, Maroc</span>
+    </footer>
+  </main>
+</body>
+</html>
